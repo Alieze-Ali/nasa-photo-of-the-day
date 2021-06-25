@@ -2,9 +2,16 @@ import React, { useState, useEffect} from 'react'
 import Title from "./Title"
 import Date from "./Date"
 import Explanation from "./Explanation"
-//import styled from 'styled-components'
+import styled from 'styled-components'
 
 import axios from 'axios'
+
+// Photo Styles
+const StyledPhoto = styled.div`
+
+`
+
+
 
 // Photo Component
 const Photo = () => {
@@ -21,12 +28,12 @@ const Photo = () => {
 
     return (
         // render here
-        <div>
+        <StyledPhoto>
             <Title title={photo.title} />
             <img src={photo.url} alt='' />
             <Date date={photo.date} />
             <Explanation explanation={photo.explanation} />
-        </div>
+        </StyledPhoto>
     )
 
 }

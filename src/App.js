@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 
-//importing js components to render
+// importing js components to render
+// App.js is the main component & holds Header & Photo components
 
 import Header from './components/Header'
 import Photo from './components/Photo'
@@ -9,11 +10,7 @@ import Photo from './components/Photo'
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>
-        </p>
-        {/* importing components here */}
+  {/* rendering app with 2 main components here */}
         <Header />
         <Photo />
       
